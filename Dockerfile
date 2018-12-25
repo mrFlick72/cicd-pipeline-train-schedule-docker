@@ -1,7 +1,6 @@
 FROM node:carbon
 EXPOSE 8080
-
-WORKDIR /opt/schedule-train
+WORKDIR /usr/schedule-train/app
 COPY . .
 RUN npm install
-CMD ["node", "start"]
+CMD ["npm","start"]
